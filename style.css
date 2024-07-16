@@ -1,0 +1,163 @@
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting body and html to full height and applying Times New Roman font */
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("background1.jpg");
+}
+
+/* Styling the navigation bar */
+.navbar {
+    background-color: #fff; /* Background color for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for the navbar */
+    padding: 10px 40px; /* Padding for the navbar */
+    display: flex; /* Using flexbox for navbar layout */
+    align-items: center; /* Centering items vertically */
+    justify-content: space-between; /* Spacing items evenly */
+}
+
+/* Styling the logo container */
+.logo-container {
+    flex: 1; /* Allowing the logo container to grow */
+}
+
+/* Styling the logo */
+.logo {
+    max-height: 60px; /* Setting a max height for the logo */
+}
+
+/* Styling the navigation links */
+.nav-links {
+    list-style: none; /* Removing default list styling */
+    display: flex; /* Using flexbox for navigation links */
+    justify-content: space-around; /* Spacing links evenly */
+    flex: 3; /* Allowing the links to take more space */
+}
+
+/* Styling each navigation link */
+.nav-links a {
+    text-decoration: none; /* Removing underline from links */
+    color: black; /* Setting link color to black */
+    padding: 10px 15px; /* Padding for each link */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+/* Adding hover effect for navigation links */
+.nav-links a:hover {
+    color: red; /* Changing color on hover */
+}
+
+.nav-links li a.active {
+   color: red;
+}
+
+
+/* Styling the hero section */
+.hero {
+    position: relative; /* Setting position to relative */
+    height: 60vh; /* Setting hero section height */
+    background-size: cover; /* Cover background image */
+    background-position: center; /* Center background image */
+    display: flex; /* Using flexbox for hero section */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+}
+
+.hero::before {
+    content: "";
+    position: absolute; /* Positioning overlay absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.3); /* Black background with 50% opacity */
+}
+
+/* Adding hover effect for hero section */
+.hero:hover::before {
+    background-color: rgba(0, 0, 0, 0.4); /* Darker black background with 70% opacity on hover */
+}
+
+/* Styling the hero image */
+.hero img {
+    width: 100%; /* Setting width to 100% */
+    height: 100%; /* Setting height to 100% */
+    object-fit: cover; /* Covering the container */
+    opacity: 10;
+}
+
+/* Styling the text overlay in hero section */
+.hero-text {
+    position: absolute; /* Positioning text absolutely */
+    color: white; /* Setting text color to white */
+    text-align: center; /* Centering text */
+    z-index: 1; /* Ensuring text is above the overlay */
+}
+
+
+/* Styling the main heading */
+.hero-text h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Adding text shadow */
+    margin-bottom: 25px; /* Adding margin below heading */
+    font-size: 35px;
+}
+
+/* Styling the subheading */
+.hero-text h2 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Adding text shadow */
+    margin-bottom: 20px; /* Adding margin below subheading */
+    font-size: 25px;
+}
+
+.hero p{
+    margin-bottom: 40px;
+}
+
+/* Styling the button */
+.hero-text button {
+    background-color: #B51313; /* Setting button background color */
+    color: white; /* Setting button text color */
+    border: none; /* Removing border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 14px; /* Font size for the button */
+    cursor: pointer; /* Setting cursor to pointer */
+    margin-top: 20px; /* Margin above button */
+    border-radius: 20px;
+}
+.below-hero p{
+    text-align: center;
+    padding: 10px;
+}
+/* Styling the footer */
+footer {
+    text-align: center; /* Centering text in footer */
+    padding: 20px; /* Padding for the footer */
+    background-color: #f1f1f1; /* Background color for the footer */
+    margin-top: 10%;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stacking links vertically */
+        width: 100%; /* Full width for links */
+    }
+
+    .nav-links a {
+        padding: 10px; /* Padding for links */
+        text-align: center; /* Centering text */
+        width: 100%; /* Full width for links */
+    }
+
+    .navbar {
+        padding: 10px 20px; /* Padding for navbar */
+    }
+}
+

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting body and html to full height and applying Times New Roman font */
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("background1.jpg");
+}
+
+.navbar {
+    background-color: #fff; /* Background color for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for the navbar */
+    padding: 10px 40px; /* Padding for the navbar */
+    display: flex; /* Using flexbox for navbar layout */
+    align-items: center; /* Centering items vertically */
+    justify-content: space-between; /* Spacing items evenly */
+}
+
+/* Styling the logo container */
+.logo-container {
+    flex: 1; /* Allowing the logo container to grow */
+}
+
+/* Styling the logo */
+.logo {
+    max-height: 60px; /* Setting a max height for the logo */
+}
+
+/* Styling the navigation links */
+.nav-links {
+    list-style: none; /* Removing default list styling */
+    display: flex; /* Using flexbox for navigation links */
+    justify-content: space-around; /* Spacing links evenly */
+    flex: 3; /* Allowing the links to take more space */
+}
+
+/* Styling each navigation link */
+.nav-links a {
+    text-decoration: none; /* Removing underline from links */
+    color: black; /* Setting link color to black */
+    padding: 10px 15px; /* Padding for each link */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+/* Adding hover effect for navigation links */
+.nav-links a:hover {
+    color: red; /* Changing color on hover */
+}
+
+.nav-links li a.active {
+    color: red;
+}
+
+#abt-uni{
+    margin-left: 10%;
+}
+
+#abt-uni h1{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+#abt-uni p{
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 60%;
+    text-align: justify;
+    line-height: 25px;
+}
+
+#abt-uni img{
+    float: right;
+    margin-right: 10%;
+    height: 13vw;
+    width: 19vw;
+    margin-top: -220px;
+    border: 2px groove;
+}
+
+#abt-clg{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+#abt-clg h1{
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: 25px;
+}
+
+#abt-clg p{
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 60%;
+    text-align: justify;
+    line-height: 25px;
+}
+
+#abt-clg #cric{
+    float: right;
+    margin-right: 10%;
+    height: 10vw;
+    width: 19vw;
+    margin-top: -320px;
+    border: 2px groove;
+}
+
+#abt-clg #class{
+    float: right;
+    margin-right: 10%;
+    height: 10vw;
+    width: 19vw;
+    margin-top: -120px;
+    border: 2px groove;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#abt-uni, #abt-clg p, img{
+    animation: fadeInUp 2s ease-out;
+}
+
+/* Styling the footer */
+footer {
+    text-align: center; /* Centering text in footer */
+    padding: 20px; /* Padding for the footer */
+    background-color: #f1f1f1; /* Background color for the footer */
+    margin-top: 10%;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stacking links vertically */
+        width: 100%; /* Full width for links */
+    }
+
+    .nav-links a {
+        padding: 10px; /* Padding for links */
+        text-align: center; /* Centering text */
+        width: 100%; /* Full width for links */
+    }
+
+    .navbar {
+        padding: 10px 20px; /* Padding for navbar */
+    }
+}
+
+
