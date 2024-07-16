@@ -54,6 +54,9 @@ body, html {
     color: red; /* Changing color on hover */
 }
 
+.nav-links li a.active {
+   color: red;
+}
 
 
 /* Styling the hero section */
